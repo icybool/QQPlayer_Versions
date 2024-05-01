@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  Run_Exe:
-    name: Run Program
+  v4_0:
+    name: v4.0
     runs-on: windows-latest
 
     steps:
@@ -13,11 +13,190 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          for %%i in (*.exe) do %%i
-          7z a archive.7z *
+          v4.0.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: archive.7z
-          path: archive.7z
+          name: v4.0.txt
+          path: v0.0.0_v0.10.1200.txt
+
+  v4_1:
+    name: v4.1
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.1.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.1.txt
+          path: v1.0.0_v1.10.1200.txt
+
+  v4_2:
+    name: v4.2
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.2.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.2.txt
+          path: v2.0.0_v2.10.1200.txt
+
+  v4_3:
+    name: v4.3
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.3.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.3.txt
+          path: v3.0.0_v3.10.1200.txt
+
+  v4_4:
+    name: v4.4
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.4.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.4.txt
+          path: v4.0.0_v4.10.1200.txt
+
+  v4_5:
+    name: v4.5
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.5.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.5.txt
+          path: v5.0.0_v5.10.1200.txt
+
+  v4_6:
+    name: v4.6
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.6.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.6.txt
+          path: v6.0.0_v6.10.1200.txt
+
+  v4_7:
+    name: v4.7
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.7.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.7.txt
+          path: v7.0.0_v7.10.1200.txt
+
+  v4_8:
+    name: v4.8
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.8.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.8.txt
+          path: v8.0.0_v8.10.1200.txt
+
+  v4_9:
+    name: v4.9
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.9.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.9.txt
+          path: v9.0.0_v9.10.1200.txt
+
+  v4_10:
+    name: v4.10
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Exe
+        shell: cmd
+        run: |
+          v4.10.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v4.10.txt
+          path: v10.0.0_v10.10.1200.txt

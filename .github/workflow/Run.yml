@@ -1,0 +1,22 @@
+name: QQPlayer
+on:
+  workflow_dispatch:
+
+jobs:
+  Run_Exe:
+    name: Run Program
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+    steps:
+      - name: Run Exe
+        run: |
+          for %%i in (*.exe) do .\%%i
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive.7z
+          path: *.txt

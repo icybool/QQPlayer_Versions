@@ -13,7 +13,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          for %i in (*.exe) do .\%i
+          for %%i in (*.exe) do %%i
           7z a archive.7z *
 
       - name: Upload archive

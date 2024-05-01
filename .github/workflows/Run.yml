@@ -8,8 +8,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Run Exe
       - uses: actions/checkout@v4
+
+      - name: Run Exe
         run: |
           for %%i in (*.exe) do .\%%i
           7z a archive.7z *

@@ -8,10 +8,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-    steps:
       - name: Run Exe
+      - uses: actions/checkout@v4
         run: |
           for %%i in (*.exe) do .\%%i
 

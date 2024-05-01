@@ -13,7 +13,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.0.exe
+          4.0.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -31,7 +31,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.1.exe
+          4.1.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -49,7 +49,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.2.exe
+          4.2.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -67,7 +67,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.3.exe
+          4.3.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -85,13 +85,13 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.4.exe
+          4.4.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
           name: v4.4.txt
-          path: v4.0.0_v4.10.1200.txt
+          path: 4.0.0_4.10.1200.txt
 
   v4_5:
     name: v4.5
@@ -103,7 +103,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.5.exe
+          4.5.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -121,7 +121,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.6.exe
+          4.6.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -139,7 +139,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.7.exe
+          4.7.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -157,7 +157,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.8.exe
+          4.8.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -175,7 +175,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.9.exe
+          4.9.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
@@ -193,7 +193,7 @@ jobs:
       - name: Run Exe
         shell: cmd
         run: |
-          v4.10.exe
+          4.10.exe
 
       - name: Upload archive
         uses: actions/upload-artifact@v4

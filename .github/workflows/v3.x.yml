@@ -31,7 +31,7 @@ jobs:
           name: v3.x
           path: v3.x.txt
 
-  v3_0_exe:
+  v3_0_python:
     name: v3.x Python
     if: ${{ inputs.pType }} == 'Python'
     runs-on: ubuntu-latest

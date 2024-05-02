@@ -14,7 +14,7 @@ on:
 jobs:
   v3_0_exe:
     name: v3.x EXE
-    if: ${{ inputs.pType }} == 'EXE'
+    if: inputs.pType == 'EXE'
     runs-on: windows-latest
 
     steps:
@@ -33,7 +33,7 @@ jobs:
 
   v3_0_python:
     name: v3.x Python
-    if: ${{ inputs.pType }} == 'Python'
+    if: inputs.pType == 'Python'
     runs-on: ubuntu-latest
 
     steps:

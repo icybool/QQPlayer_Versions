@@ -1,4 +1,4 @@
-name: QQPlayer
+name: QQPlayer v4.x
 on:
   workflow_dispatch:
 

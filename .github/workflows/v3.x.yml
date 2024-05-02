@@ -1,10 +1,20 @@
 name: QQPlayer v3.x
 on:
   workflow_dispatch:
+    inputs:
+      pType:
+        description: 'Program Type'
+        required: true
+#       default: 'warning'
+        type: choice
+        options:
+        - EXE
+        - Python
 
 jobs:
-  v4_0:
-    name: v4.0
+  v3_0_exe:
+    name: v3.x EXE
+    if: ${{ inputs.pType }} == 'EXE'
     runs-on: windows-latest
 
     steps:
@@ -14,6 +24,24 @@ jobs:
         shell: cmd
         run: |
           v3.x.exe
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: v3.x
+          path: v3.x.txt
+
+  v3_0_exe:
+    name: v3.x Python
+    if: ${{ inputs.pType }} == 'Python'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Py
+        run: |
+          python v3.x.py
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
